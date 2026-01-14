@@ -3,8 +3,7 @@ import axios from 'axios';
 import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd';
 import { Plus, GripVertical, Trash2, Layout, X, Filter } from 'lucide-react';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001/api/tasks';
-
+const API_URL = `${import.meta.env.VITE_API_URL}/api/tasks` || 'http://localhost:3001/api/tasks';
 const catColors = {
   Bug: 'bg-red-500/20 text-red-400 border-red-500/50',
   Feature: 'bg-emerald-500/20 text-emerald-400 border-emerald-500/50',
