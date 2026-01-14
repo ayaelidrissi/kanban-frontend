@@ -4,7 +4,7 @@ import { DragDropContext, Droppable, Draggable } from '@hello-pangea/dnd';
 import { Plus, GripVertical, Trash2, Layout, X, Filter } from 'lucide-react';
 
 // This version ensures no double slashes and handles the missing environment variable
-const BASE_URL = import.meta.env.VITE_API_URL ? import.meta.env.VITE_API_URL.replace(/\/$/, "") : 'http://localhost:3001';
+const BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001';
 const API_URL = `${BASE_URL}/api/tasks`;
 const catColors = {
   Bug: 'bg-red-500/20 text-red-400 border-red-500/50',
